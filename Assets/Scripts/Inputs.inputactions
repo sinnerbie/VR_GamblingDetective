@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "InputLinterna",
+            "id": "87d87d13-fc92-460c-985a-d9b56817c341",
+            "actions": [
+                {
+                    "name": "OnTriggerPressed",
+                    "type": "Button",
+                    "id": "79f2798e-7da9-4914-b3ad-498861241548",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnTriggerPressedVioleta",
+                    "type": "Button",
+                    "id": "c955cb86-a89e-4c28-a163-946c4aa13c63",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a7639518-12a9-496b-86df-2c9a880fcc58",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnTriggerPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c205b935-22b5-43ba-9336-27318c724267",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnTriggerPressedVioleta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
