@@ -49,6 +49,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Interactuar",
+            "id": "4c13ce6c-f631-41c5-ab78-edcfdab12d61",
+            "actions": [
+                {
+                    "name": "OnTriggerPressedAbrir",
+                    "type": "Button",
+                    "id": "6ce681e2-fed1-4e0c-8e1b-7225561304ff",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5ed86c2b-a915-4728-bd4a-7d69306f4b51",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnTriggerPressedAbrir",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
