@@ -11,8 +11,10 @@ public class NotebookBehaviour : MonoBehaviour
     [SerializeField] private Canvas _Canvas;
 
     [Header("Manage Clues")]
+    [SerializeField] private GameObject _ClueItem;
     [SerializeField] private TMP_Text _Test;
-    [System.Serializable] public class Page { public List<string> clues = new List<string>(new string[1]); }
+    [System.Serializable] public class Clue { public Image _image; public string message; }
+    [System.Serializable] public class Page { public List<Clue> clues = new List<Clue>(new Clue[1]); }
     [SerializeField] List<Page> pages = new List<Page>();
     [SerializeField] private int currentPage = 0;
 
@@ -71,10 +73,10 @@ public class NotebookBehaviour : MonoBehaviour
 
     public void fAddClue(string newClue)
     {
-        StartCoroutine(fSortNewClue(newClue));
+        //StartCoroutine(fSortNewClue(newClue));
     }
 
-    IEnumerator fSortNewClue(string newClue)
+    /*IEnumerator fSortNewClue(string newClue)
     {
         _Test.text = "";
         string content = "";
@@ -97,7 +99,7 @@ public class NotebookBehaviour : MonoBehaviour
 
         _Test.text = "";
         StopCoroutine("fSortNewClue");
-    }
+    }*/
 
     void fPrintClues(int pageID)
     {
