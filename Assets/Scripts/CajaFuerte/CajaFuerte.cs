@@ -69,6 +69,18 @@ public class CajaFuerte : MonoBehaviour
         }
     }
 
+    public void IncrementarNumero(TextMeshProUGUI textoNumero)
+    {
+        int valorActual = int.Parse(textoNumero.text);
+
+        valorActual++;
+
+        if (valorActual > 9)
+            valorActual = 0;
+
+        textoNumero.text = valorActual.ToString();
+    }
+
     void CajaCorrecta()
     {
         Debug.Log("Combinación correcta");
