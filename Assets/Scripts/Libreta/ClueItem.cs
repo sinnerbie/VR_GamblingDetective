@@ -9,8 +9,9 @@ public class ClueItem : MonoBehaviour
 
     public void UpdateContent(Sprite newIm, string newMsg)
     {
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
         photo.sprite = newIm;
         message.text = newMsg;
-        GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
     }
 }

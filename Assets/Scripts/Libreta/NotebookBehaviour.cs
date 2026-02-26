@@ -12,11 +12,11 @@ public class NotebookBehaviour : MonoBehaviour
 
     [Header("Manage Clues")]
     [SerializeField] private GameObject _ClueItem;
-    [SerializeField] private TMP_Text _Test;
-    [System.Serializable] public class Clue { public Image _image; public string message; }
-    [System.Serializable] public class Page { public List<Clue> clues = new List<Clue>(new Clue[1]); }
-    [SerializeField] List<Page> pages = new List<Page>();
-    [SerializeField] private int currentPage = 0;
+    [SerializeField] GameObject clueArea;
+    [System.Serializable] public class Clue { public Sprite _sprite; public string message; }
+    [SerializeField] List<Clue> _Clues = new List<Clue>();
+    [SerializeField] private int cluesPerPage = 6;
+    [SerializeField] private int currentPage = 1;
 
     NotebookVisuals _Visuals;
 
@@ -28,7 +28,6 @@ public class NotebookBehaviour : MonoBehaviour
     void Start()
     {
         _Canvas.worldCamera = Camera.main;
-        fAddClue("New Clue");
     }
 
     [ContextMenu("Turn Page")]
@@ -47,7 +46,8 @@ public class NotebookBehaviour : MonoBehaviour
     {
         if (nextPage)
         {
-            if (currentPage != pages.Count - 1)
+            float totalClues = _Clues.Count;
+            if (currentPage + 1 <= Mathf.Ceil(totalClues / cluesPerPage))
             {
                 currentPage++;
                 fPrintClues(currentPage);
@@ -56,7 +56,7 @@ public class NotebookBehaviour : MonoBehaviour
         }
         else
         {
-            if (currentPage != 0)
+            if (currentPage != 1)
             {
                 currentPage--;
                 fPrintClues(currentPage);
@@ -68,48 +68,36 @@ public class NotebookBehaviour : MonoBehaviour
     public void fToggleNotebook(bool open)
     {
         fPrintClues(currentPage);
-        _Visuals.fOpenCloseNotes(true);
+        _Visuals.fOpenCloseNotes(open);
     }
 
-    public void fAddClue(string newClue)
+    public void fAddClue(Sprite thumbnail, string newClueMsg)
     {
-        //StartCoroutine(fSortNewClue(newClue));
+        Clue newClu = new Clue();
+        newClu._sprite = thumbnail;
+        newClu.message = newClueMsg;
+        _Clues.Add(newClu);
     }
-
-    /*IEnumerator fSortNewClue(string newClue)
-    {
-        _Test.text = "";
-        string content = "";
-        for (int i = 0; i < pages[pages.Count - 1].clues.Count; i++)
-        {
-            content += pages[pages.Count - 1].clues[i];
-            content += "\n";
-        }
-        content += newClue;
-        _Test.text = content;
-        yield return new WaitForEndOfFrame();
-        if (_Test.isTextTruncated)
-        {
-            Page newPage = new Page();
-            newPage.clues[0] = newClue;
-            pages.Add(newPage);
-        }
-        else
-            pages[pages.Count - 1].clues.Add(newClue);
-
-        _Test.text = "";
-        StopCoroutine("fSortNewClue");
-    }*/
 
     void fPrintClues(int pageID)
     {
-        string content = "";
-        for (int i = 0; i < pages[pageID].clues.Count; i++)
+        fDeleteClues();
+        int pageNo = (pageID * cluesPerPage) - (cluesPerPage - 1);
+        Debug.Log(pageNo);
+        for (int i = pageNo; i < pageNo + cluesPerPage; i++)
         {
-            content += pages[pageID].clues[i];
-            content += "\n";
+            if (i < _Clues.Count)
+            {
+                GameObject clueObject = Instantiate(_ClueItem);
+                clueObject.transform.SetParent(clueArea.transform);
+                clueObject.GetComponent<ClueItem>().UpdateContent(_Clues[i]._sprite, _Clues[i].message);
+            }
         }
+    }
 
-        _Visuals.info = content;
+    public void fDeleteClues()
+    {
+        foreach (Transform child in clueArea.transform)
+            GameObject.Destroy(child.gameObject);
     }
 }
