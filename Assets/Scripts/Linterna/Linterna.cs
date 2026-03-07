@@ -29,33 +29,27 @@ public class Linterna : MonoBehaviour
         triggerPressedUltraVioleta.action.Disable();
     }
 
-    void LuzNormalEncendida()
+    void EncenderLuzNormal()
     {
        //Encendemos luz normal
        flashlightLight.enabled = true;
        flashlightLight.color = Color.white;
-
-       //Aseguramos que la luz UV esté apagada
-       flashLightUltraVioleta.enabled = false;
     }
 
-    void LuzNormalApagada()
+    void ApagarLuzNormal()
     {
         //Apagamos luz normal
         flashlightLight.enabled = false;
     }
 
-    void LuzUVEncendida()
+    void EncenderLuzUV()
     {
         //Encendemos luz UV
         flashLightUltraVioleta.enabled = true;
         flashLightUltraVioleta.color = new Color(0.5f, 0f, 1f); // Color morado para UV
-
-        //Aseguramos que la luz normal esté apagada
-        flashlightLight.enabled = false;
     }
 
-    void LuzUVApagada()
+    void ApagarLuzUV()
     {
         //Apagamos luz UV
         flashLightUltraVioleta.enabled = false;
@@ -67,16 +61,15 @@ public class Linterna : MonoBehaviour
         switch (estadoLinterna)
         {
             case 0:
-                LuzNormalEncendida();
+                EncenderLuzNormal();
                 estadoLinterna = 1;
                 break;
             case 1:
-                LuzNormalApagada();
+                ApagarLuzNormal();
                 estadoLinterna = 0;
                 break;
             case 2:
-                LuzUVApagada();
-                //LuzNormalEncendida();
+                ApagarLuzUV();
                 estadoLinterna = 0;
                 break;
             default:
@@ -94,13 +87,13 @@ public class Linterna : MonoBehaviour
                 Debug.Log("No se puede encender la UV si la luz normal está apagada");
                 break;
             case 1:
-                LuzNormalApagada();
-                LuzUVEncendida();
+                ApagarLuzNormal();
+                EncenderLuzUV();
                 estadoLinterna = 2;
                 break;
             case 2:
-                LuzUVApagada();
-                LuzNormalEncendida();
+                ApagarLuzUV();
+                EncenderLuzNormal();
                 estadoLinterna = 1;
                 break;
             default:
