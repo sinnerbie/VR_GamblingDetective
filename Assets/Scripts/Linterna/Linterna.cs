@@ -9,7 +9,7 @@ public class Linterna : MonoBehaviour
     public Light flashLightUltraVioleta;
     public InputActionReference triggerPressedUltraVioleta;
 
-    //private bool estaEncendido = false;
+    private int estadoLinterna = 0; // 0 = luz apagada, 1 = luz normal, 2 = luz UV
 
     void OnEnable()
     {
@@ -29,7 +29,90 @@ public class Linterna : MonoBehaviour
         triggerPressedUltraVioleta.action.Disable();
     }
 
+    void LuzNormalEncendida()
+    {
+       //Encendemos luz normal
+       flashlightLight.enabled = true;
+       flashlightLight.color = Color.white;
 
+       //Aseguramos que la luz UV esté apagada
+       flashLightUltraVioleta.enabled = false;
+    }
+
+    void LuzNormalApagada()
+    {
+        //Apagamos luz normal
+        flashlightLight.enabled = false;
+    }
+
+    void LuzUVEncendida()
+    {
+        //Encendemos luz UV
+        flashLightUltraVioleta.enabled = true;
+        flashLightUltraVioleta.color = new Color(0.5f, 0f, 1f); // Color morado para UV
+
+        //Aseguramos que la luz normal esté apagada
+        flashlightLight.enabled = false;
+    }
+
+    void LuzUVApagada()
+    {
+        //Apagamos luz UV
+        flashLightUltraVioleta.enabled = false;
+    }
+
+    //Metodo para manejar la Luz normal
+    void OnTriggerPressed(InputAction.CallbackContext ctx)
+    {
+        switch (estadoLinterna)
+        {
+            case 0:
+                LuzNormalEncendida();
+                estadoLinterna = 1;
+                break;
+            case 1:
+                LuzNormalApagada();
+                estadoLinterna = 0;
+                break;
+            case 2:
+                LuzUVApagada();
+                //LuzNormalEncendida();
+                estadoLinterna = 0;
+                break;
+            default:
+                Debug.LogError("Estado de linterna desconocido: " + estadoLinterna);
+                break;
+        }
+    }
+
+    //Metodo para manejar la Luz UV
+    void OnTriggerPressedUltraVioleta(InputAction.CallbackContext ctx)
+    {
+        switch (estadoLinterna)
+        {
+            case 0:
+                Debug.Log("No se puede encender la UV si la luz normal está apagada");
+                break;
+            case 1:
+                LuzNormalApagada();
+                LuzUVEncendida();
+                estadoLinterna = 2;
+                break;
+            case 2:
+                LuzUVApagada();
+                LuzNormalEncendida();
+                estadoLinterna = 1;
+                break;
+            default:
+                Debug.LogError("Estado de linterna desconocido: " + estadoLinterna);
+                break;
+        }
+
+    }
+
+    //Codigo funcional pero sucio, lo dejo comentado por si se quiere revisar o usar como referencia, pero el codigo de arriba es mas limpio y organizado
+
+    /*
     void OnTriggerPressed(InputAction.CallbackContext ctx)
     {
         if (flashlightLight == null || flashLightUltraVioleta == null) return;
@@ -57,7 +140,10 @@ public class Linterna : MonoBehaviour
             Debug.Log("Luz normal apagada");
         }
     }
+    */
 
+
+    /*
     void OnTriggerPressedUltraVioleta(InputAction.CallbackContext ctx)
     {
         if (flashLightUltraVioleta == null || flashlightLight == null) return;
@@ -79,48 +165,5 @@ public class Linterna : MonoBehaviour
             Debug.Log("UV apagada");
         }
     }
-
-
-
-
-    /*
-    void OnTriggerPressed(InputAction.CallbackContext ctx)
-    {
-        //Linterna normal (Teclado --> F)
-       
-        if (flashlightLight == null) return;
-        flashlightLight.enabled = !flashlightLight.enabled;
-        estaEncendido = true;
-        Debug.Log("Luz normal");
-        if (!flashlightLight.enabled)
-        {
-
-            estaEncendido = false;
-            
-        }
-    }
     */
-
-    /*
-    void OnTriggerPressedUltraVioleta(InputAction.CallbackContext ctx)
-    {
-        //Linterna Ultra Violeta (Teclado --> V)
-        if (estaEncendido == true)
-        {
-            if (flashLightUltraVioleta == null) return;
-            flashLightUltraVioleta.enabled = !flashLightUltraVioleta.enabled;
-            flashlightLight.color = Color.purple;
-            
-                Debug.Log("Luz ultra violeta");
-        }
-
-        if (!flashLightUltraVioleta.enabled)
-        {
-            flashlightLight.color = Color.white;
-        }
-
-    }
-    */
-
-
 }
