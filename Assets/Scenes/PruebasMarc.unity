@@ -505,7 +505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &28632280
 Transform:
   m_ObjectHideFlags: 0
@@ -2781,7 +2781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &603894106
 Transform:
   m_ObjectHideFlags: 0
@@ -5081,14 +5081,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CajaFuerte
   cajaRenderer: {fileID: 1032711109}
   colorCorrecto: {r: 0, g: 1, b: 0, a: 1}
-  num1: {fileID: 116628217}
-  num2: {fileID: 1228174016}
-  num3: {fileID: 564575829}
-  num4: {fileID: 954825339}
-  num1Combinacion: {fileID: 1955770318}
-  num2Combinacion: {fileID: 125613605}
-  num3Combinacion: {fileID: 1723310979}
-  num4Combinacion: {fileID: 1414333111}
+  numeros:
+  - {fileID: 116628217}
+  - {fileID: 1228174016}
+  - {fileID: 564575829}
+  - {fileID: 954825339}
+  numCombinacion:
+  - {fileID: 1955770318}
+  - {fileID: 125613605}
+  - {fileID: 1723310979}
+  - {fileID: 1414333111}
 --- !u!1 &1036345344
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,22 +4,16 @@ using TMPro;
 
 public class CajaFuerte : MonoBehaviour
 {
-    int clave1, clave2, clave3, clave4;
+    int[] claves = new int[4]; //clave1, clave2, clave3, clave4
 
     public Renderer cajaRenderer;
     public Color colorCorrecto = Color.green;
 
-    //Numeros Randoms que hay que poner en el candado
-    public TextMeshProUGUI num1;
-    public TextMeshProUGUI num2;
-    public TextMeshProUGUI num3;
-    public TextMeshProUGUI num4;
+    //Lista de Numeros Randoms que hay que poner en el candado
+    public TextMeshProUGUI[] numeros;
 
-    //Numeros que hay que acertar en el candado
-    public TextMeshProUGUI num1Combinacion;
-    public TextMeshProUGUI num2Combinacion;
-    public TextMeshProUGUI num3Combinacion;
-    public TextMeshProUGUI num4Combinacion;
+    //Lista Numeros que hay que acertar en el candado
+    public TextMeshProUGUI[] numCombinacion; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,39 +28,42 @@ public class CajaFuerte : MonoBehaviour
 
     public void NumerosAleatorios()
     {
-        clave1 = Random.Range(0, 10);
-        clave2 = Random.Range(0, 10);
-        clave3 = Random.Range(0, 10);
-        clave4 = Random.Range(0, 10);
-
-        num1.text = clave1.ToString();
-        num2.text = clave2.ToString();
-        num3.text = clave3.ToString();
-        num4.text = clave4.ToString();
+        for (int i = 0; i < claves.Length; i++)
+        {
+            claves[i] = Random.Range(0, 10);
+            numeros[i].text = claves[i].ToString();
+        }
 
         //Combinacion final en consola
-        Debug.Log($"CLAVE: {clave1}{clave2}{clave3}{clave4}");
+        Debug.Log($"CLAVE: {claves[0]}{claves[1]}{claves[2]}{claves[3]}");
     }
 
     public void ComprobarCombinacion()
     {
-        int intento1 = int.Parse(num1Combinacion.text);
-        int intento2 = int.Parse(num2Combinacion.text);
-        int intento3 = int.Parse(num3Combinacion.text);
-        int intento4 = int.Parse(num4Combinacion.text);
+        //int i = 0;
+        //while(i < 4)
+        //{
+        //    if (claves[i] == int.Parse(numCombinacion[i].text)) 
+        //    {
+        //        i++;
+        //    }
+        //    else
+        //    {
+        //        ResetearCandado();
+        //        return;
+        //    }
+        //}
+        //CajaCorrecta();
 
-        if (intento1 == clave1 &&
-            intento2 == clave2 &&
-            intento3 == clave3 &&
-            intento4 == clave4)
+        for (int i = 0; i < claves.Length; i++)
         {
-            CajaCorrecta();
+            if (claves[i] != int.Parse(numCombinacion[i].text))
+            {
+                ResetearCandado();
+                return;
+            }
         }
-        else
-        {
-            Debug.Log("No es esa combinación");
-            ResetearCandado();
-        }
+        CajaCorrecta();
     }
 
     public void IncrementarNumero(TextMeshProUGUI textoNumero)
@@ -89,9 +86,9 @@ public class CajaFuerte : MonoBehaviour
 
     void ResetearCandado()
     {
-        num1Combinacion.text = "0";
-        num2Combinacion.text = "0";
-        num3Combinacion.text = "0";
-        num4Combinacion.text = "0";
+        for(int i = 0; i < numCombinacion.Length; i++)
+        {
+            numCombinacion[i].text = "0";
+        }
     }
 }
