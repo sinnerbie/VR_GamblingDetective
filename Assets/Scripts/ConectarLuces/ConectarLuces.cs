@@ -42,13 +42,14 @@ public class ConectarLuces : MonoBehaviour
         int fila = index / 3;
         int col = index % 3;
 
-        if (fila > 0) Toggle(index - 3);
-        if (fila < 2) Toggle(index + 3);
-        if (fila > 0) Toggle(index - 1);
-        if (fila < 2) Toggle(index + 1);
+        if (fila > 0) Toggle(index - 3);  // arriba
+        if (fila < 2) Toggle(index + 3);  // abajo
+        if (col > 0) Toggle(index - 1);  // izquierda
+        if (col < 2) Toggle(index + 1);  // derecha
 
         ActualizarColores();
     }
+
 
     void Toggle(int i)
     {
