@@ -22,9 +22,10 @@ public class InventorySystem : MonoBehaviour
 
     public void SnapItem(InventoryItem newIt)
     {
-        newIt.stashed = true;
         if (newIt.itemType == InventoryItem.Item.Key)
         {
+            if (_KeyStash.Count == _KeyPositions.Count) return;
+            newIt.stashed = true;
             _KeyStash.Add(newIt);
             for (int i = 0; i < _KeyPositions.Count; i++)
                 if (_KeyPositions[i].childCount == 0) 
@@ -35,6 +36,8 @@ public class InventorySystem : MonoBehaviour
         }
         else if (newIt.itemType == InventoryItem.Item.Miscelaneous)
         {
+            if (_MiscStash.Count == _MiscPositions.Count) return;
+            newIt.stashed = true;
             _MiscStash.Add(newIt);
             for (int i = 0; i < _MiscPositions.Count; i++)
                 if (_MiscPositions[i].childCount == 0) 
