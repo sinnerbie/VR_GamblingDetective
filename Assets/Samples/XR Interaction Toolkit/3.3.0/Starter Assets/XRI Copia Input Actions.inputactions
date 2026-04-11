@@ -1,5 +1,6 @@
 {
-    "name": "XRI Default Input Actions",
+    "version": 1,
+    "name": "XRI Copia Input Actions",
     "maps": [
         {
             "name": "XRI Head",
