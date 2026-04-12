@@ -3654,7 +3654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 603894106}
   m_Layer: 0
-  m_Name: CajaFuerte
+  m_Name: CajaFuerte (HECHO)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7180,7 +7180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036345345
 Transform:
   m_ObjectHideFlags: 0
@@ -11188,7 +11188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1603014747}
   m_Layer: 0
-  m_Name: Conectar Luces
+  m_Name: Conectar Luces (HECHO)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11886,7 +11886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1831622616
 Transform:
   m_ObjectHideFlags: 0
