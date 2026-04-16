@@ -11,7 +11,7 @@ public class ClueItem : MonoBehaviour
     {
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
-        photo.sprite = newIm;
+        if (photo.sprite != null) photo.sprite = newIm;
         message.text = newMsg;
     }
 }
