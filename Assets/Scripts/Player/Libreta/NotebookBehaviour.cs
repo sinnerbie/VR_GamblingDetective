@@ -30,6 +30,12 @@ public class NotebookBehaviour : MonoBehaviour
         _Canvas.worldCamera = Camera.main;
     }
 
+    [ContextMenu("Try add")]
+    public void TryAdd()
+    {
+        fAddClue(null, "effervecent");
+    }
+
     [ContextMenu("Turn Page")]
     public void TryTurnPage()
     {
@@ -86,6 +92,7 @@ public class NotebookBehaviour : MonoBehaviour
         Debug.Log(pageNo);
         for (int i = pageNo; i < pageNo + cluesPerPage; i++)
         {
+            Debug.Log(i);
             if (i < _Clues.Count)
             {
                 GameObject clueObject = Instantiate(_ClueItem);
