@@ -33,7 +33,7 @@ public class NotebookBehaviour : MonoBehaviour
     [ContextMenu("Try add")]
     public void TryAdd()
     {
-        fAddClue(null, "effervecent");
+        fAddClue(null, "BOTTOM Text");
     }
 
     [ContextMenu("Turn Page")]
