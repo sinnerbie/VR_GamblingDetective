@@ -3424,7 +3424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControlBotonReloj
   pivoteAguja: {fileID: 648402895}
   gradosPorPulsacion: 30
-  sentidoHorario: 0
+  sentidoHorario: 1
 --- !u!114 &408278510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8264,9 +8264,9 @@ MonoBehaviour:
   pivoteHoras: {fileID: 648402895}
   pivoteMinutos: {fileID: 1793090187}
   recompensa: {fileID: 0}
-  numeroHoras: 12
-  numeroMinutos: 0
-  tolerancia: 0
+  numeroHoras: 3
+  numeroMinutos: 5
+  tolerancia: 5
 --- !u!1 &991553430
 GameObject:
   m_ObjectHideFlags: 0
@@ -12898,7 +12898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControlBotonReloj
   pivoteAguja: {fileID: 1793090187}
   gradosPorPulsacion: 6
-  sentidoHorario: 0
+  sentidoHorario: 1
 --- !u!114 &1426204530
 MonoBehaviour:
   m_ObjectHideFlags: 0

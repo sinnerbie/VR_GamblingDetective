@@ -17,7 +17,6 @@ public class ControlBotonRelojSimple : MonoBehaviour, IPointerClickHandler
             Debug.LogError($"ERROR: Asigna el pivoteAguja en {gameObject.name}");
         }
 
-        // Verificar collider
         if (GetComponent<Collider>() == null)
         {
             Debug.LogError($"ERROR: {gameObject.name} no tiene Collider!");
@@ -26,20 +25,17 @@ public class ControlBotonRelojSimple : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Debug.Log($"CLICK en {gameObject.name}");
-
         if (pivoteAguja == null) return;
 
-        float rot = gradosPorPulsacion * (sentidoHorario ? 1f : -1f);
+        // Invertido: sentidoHorario = true ahora rota en sentido horario
+        float rot = gradosPorPulsacion * (sentidoHorario ? -1f : 1f);
         pivoteAguja.Rotate(0, 0, rot, Space.Self);
 
         Debug.Log($"Nueva rotación: {pivoteAguja.localEulerAngles.z}");
     }
 
-    // Método alternativo para pruebas
     void OnMouseDown()
     {
-        //Debug.Log($"OnMouseDown en {gameObject.name}");
         OnPointerClick(null);
     }
 }
