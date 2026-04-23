@@ -14,11 +14,15 @@ public class Strongbox : MonoBehaviour
     [SerializeField] private UnityEvent alAcertar;
     [SerializeField] private UnityEvent alFallar;
 
+    [Header("Fuera")]
+    [SerializeField] GameObject puerta;
+
     private string codigoActual = "";
 
     private void Start()
     {
         ActualizarUI();
+        Debug.Log(codigoCorrecto);
     }
 
     public void PulsarNumero(int numero)
@@ -41,6 +45,7 @@ public class Strongbox : MonoBehaviour
 
     private void ComprobarCodigo()
     {
+        Debug.Log("numero elegido " + codigoActual);
         if (codigoActual == codigoCorrecto)
         {
             Debug.Log("Código correcto");
@@ -50,13 +55,14 @@ public class Strongbox : MonoBehaviour
         {
             Debug.Log("Código incorrecto");
             alFallar?.Invoke();
-            LimpiarCodigo();
+           //LimpiarCodigo();
         }
     }
 
     public void Correcto()
     {
         Debug.Log("Caja Abierta");
+        puerta.SetActive(false);
     }
 
     private void ActualizarUI()
