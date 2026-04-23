@@ -9,6 +9,7 @@ public class LightTile : MonoBehaviour
     [SerializeField] private Renderer targetRenderer;
     [SerializeField] private Material offMaterial;
     [SerializeField] private Material onMaterial;
+    [SerializeField] private Material completeMaterial;
 
     [Header("Estado")]
     [SerializeField] private bool isOn = false;
@@ -19,6 +20,8 @@ public class LightTile : MonoBehaviour
 
     [Header("Tiles afectados por este botón")]
     [SerializeField] private List<LightTile> affectedTiles = new List<LightTile>();
+
+    private bool showCompletedVisual;
 
     public bool IsOn => isOn;
     public List<LightTile> AffectedTiles => affectedTiles;
@@ -57,7 +60,6 @@ public class LightTile : MonoBehaviour
         }
         else
         {
-            // Si no usas manager, al menos cambiar los afectados directamente
             foreach (var tile in affectedTiles)
             {
                 if (tile != null)
@@ -69,18 +71,32 @@ public class LightTile : MonoBehaviour
     public void Toggle()
     {
         isOn = !isOn;
+        showCompletedVisual = false;
         UpdateVisual();
     }
 
     public void SetState(bool value)
     {
         isOn = value;
+        showCompletedVisual = false;
+        UpdateVisual();
+    }
+
+    public void SetCompletedVisual(bool completed)
+    {
+        showCompletedVisual = completed;
         UpdateVisual();
     }
 
     private void UpdateVisual()
     {
         if (targetRenderer == null) return;
+
+        if (showCompletedVisual && completeMaterial != null)
+        {
+            targetRenderer.material = completeMaterial;
+            return;
+        }
 
         targetRenderer.material = isOn ? onMaterial : offMaterial;
     }
