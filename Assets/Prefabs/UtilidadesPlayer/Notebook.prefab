@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 489818407268799049}
   - component: {fileID: 1124784766890593503}
   - component: {fileID: 3231883522414846186}
+  - component: {fileID: 1406231533972945472}
   m_Layer: 0
   m_Name: Notebook
   m_TagString: Untagged
@@ -187,7 +188,23 @@ MonoBehaviour:
   _Canvas: {fileID: 4384371224268994827}
   _ClueItem: {fileID: 966996010120402522, guid: 06da78b629074e348979457ce98d8ad8, type: 3}
   clueArea: {fileID: 873675274804342833}
-  _Clues: []
+  _Clues:
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
+  - _sprite: {fileID: 0}
+    message: ffarwteqhy
   cluesPerPage: 6
   currentPage: 1
 --- !u!114 &3214351071277583437
@@ -425,6 +442,22 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1406231533972945472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261725384943493238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7b6dc0e42c2ce4bbe303a5ebf64372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardarEnBolsillo
+  tagBolsillo: Bolsillo
+  hacerHijoDelBolsillo: 1
+  posicionLocalEnBolsillo: {x: 0, y: 0, z: 0}
+  rotacionLocalEnBolsillo: {x: 0, y: 0, z: 0}
 --- !u!1 &873675274804342833
 GameObject:
   m_ObjectHideFlags: 0

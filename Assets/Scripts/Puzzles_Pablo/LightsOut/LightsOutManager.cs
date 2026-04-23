@@ -8,7 +8,6 @@ public class LightsOutManager : MonoBehaviour
     {
         if (pressedTile == null) return;
 
-        // Cambia los tiles definidos en la lista del botón pulsado
         foreach (var tile in pressedTile.AffectedTiles)
         {
             if (tile != null)
@@ -19,13 +18,25 @@ public class LightsOutManager : MonoBehaviour
     }
 
     private void CheckWinCondition()
-{
-    foreach (var tile in allTiles)
     {
-        if (tile != null && !tile.IsOn)
-            return;
-    }
+        bool allOn = true;
 
-    Debug.Log("¡Puzzle completado!");
-}
+        foreach (var tile in allTiles)
+        {
+            if (tile != null && !tile.IsOn)
+            {
+                allOn = false;
+                break;
+            }
+        }
+
+        foreach (var tile in allTiles)
+        {
+            if (tile != null)
+                tile.SetCompletedVisual(allOn);
+        }
+
+        if (allOn)
+            Debug.Log("¡Puzzle completado!");
+    }
 }

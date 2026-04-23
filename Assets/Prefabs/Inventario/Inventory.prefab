@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 4396739323787840240}
   - component: {fileID: 586747553950565619}
   - component: {fileID: 4165521276289740868}
+  - component: {fileID: -2587105742023783073}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -465,6 +466,22 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &-2587105742023783073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395381109760027085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7b6dc0e42c2ce4bbe303a5ebf64372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GuardarEnBolsillo
+  tagBolsillo: Bolsillo
+  hacerHijoDelBolsillo: 1
+  posicionLocalEnBolsillo: {x: 0, y: 0, z: 0}
+  rotacionLocalEnBolsillo: {x: 0, y: 0, z: 0}
 --- !u!1 &4757483326492547567
 GameObject:
   m_ObjectHideFlags: 0
