@@ -1,38 +1,45 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.EventSystems;
 
-public class ControlBotonReloj : MonoBehaviour
+public class ControlBotonRelojSimple : MonoBehaviour, IPointerClickHandler
 {
     [Header("Referencias")]
-    public XRBaseInteractable botonInteractable; // El XRSimpleInteractable del botón
-    public Transform aguja; // Aguja a rotar
-    public float gradosPorPulsacion = 6f; // 6 min, 30 horas
+    public Transform pivoteAguja;
+    public float gradosPorPulsacion = 6f;
     public bool sentidoHorario = true;
 
-    void OnEnable()
+    void Start()
     {
-        Debug.Log(" tu abuela");
-        if (botonInteractable != null)
+        Debug.Log($"Botón simple iniciado: {gameObject.name}");
+
+        if (pivoteAguja == null)
         {
-            
-            botonInteractable.activated.AddListener(OnBotonActivado);
+            Debug.LogError($"ERROR: Asigna el pivoteAguja en {gameObject.name}");
+        }
+
+        // Verificar collider
+        if (GetComponent<Collider>() == null)
+        {
+            Debug.LogError($"ERROR: {gameObject.name} no tiene Collider!");
         }
     }
 
-    void OnDisable()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        if (botonInteractable != null)
-        {
-            botonInteractable.activated.RemoveListener(OnBotonActivado);
-        }
-    }
+        //Debug.Log($"CLICK en {gameObject.name}");
 
-    void OnBotonActivado(ActivateEventArgs args)
-    {
-        if (aguja == null) return;
-        Debug.Log("me comi a tu abuela");
+        if (pivoteAguja == null) return;
+
         float rot = gradosPorPulsacion * (sentidoHorario ? 1f : -1f);
-        aguja.Rotate(0, rot, 0);
+        pivoteAguja.Rotate(0, 0, rot, Space.Self);
+
+        Debug.Log($"Nueva rotación: {pivoteAguja.localEulerAngles.z}");
+    }
+
+    // Método alternativo para pruebas
+    void OnMouseDown()
+    {
+        //Debug.Log($"OnMouseDown en {gameObject.name}");
+        OnPointerClick(null);
     }
 }
