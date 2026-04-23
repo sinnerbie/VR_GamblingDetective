@@ -9,7 +9,20 @@ public class MenuOption : MonoBehaviour
     [Header("Input")]
     public InputActionReference menuButton; // <XRController>{LeftHand}/menuButton
 
+    [Header("Player")]
+    public GameObject locomotion; // locomotion del jugador
+
     private bool enPausa = false;
+
+    void Start()
+    {
+        // Aseguramos estado inicial correcto
+        if (menuOpciones != null)
+            menuOpciones.SetActive(false);
+
+        if (locomotion != null)
+            locomotion.SetActive(true);
+    }
 
     void OnEnable()
     {
@@ -31,7 +44,6 @@ public class MenuOption : MonoBehaviour
 
     void OnMenuPressed(InputAction.CallbackContext ctx)
     {
-        // Evita múltiples activaciones raras
         if (ctx.phase != InputActionPhase.Performed) return;
 
         if (enPausa)
@@ -45,6 +57,9 @@ public class MenuOption : MonoBehaviour
         if (menuOpciones != null)
             menuOpciones.SetActive(true);
 
+        if (locomotion != null)
+            locomotion.SetActive(false); // DESACTIVA movimiento
+
         Time.timeScale = 0f;
         enPausa = true;
 
@@ -55,6 +70,9 @@ public class MenuOption : MonoBehaviour
     {
         if (menuOpciones != null)
             menuOpciones.SetActive(false);
+
+        if (locomotion != null)
+            locomotion.SetActive(true); // ACTIVA movimiento
 
         Time.timeScale = 1f;
         enPausa = false;
