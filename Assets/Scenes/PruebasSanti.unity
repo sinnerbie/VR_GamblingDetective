@@ -1345,6 +1345,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
   m_PrefabInstance: {fileID: 692397217}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &712919673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7917674758246323946, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1373153106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733854332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,6 +2691,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuOption
   menuOpciones: {fileID: 807051350}
   menuButton: {fileID: -3380200529510134745, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  locomotion: {fileID: 1373153109}
+  playerCamera: {fileID: 712919673}
+--- !u!1 &1373153109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3051491437750746931, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+  m_PrefabInstance: {fileID: 1373153106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1415647738 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5005649301645334909, guid: 085ce58b196caa446a8545c9dd388793, type: 3}
