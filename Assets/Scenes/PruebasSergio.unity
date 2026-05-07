@@ -4819,6 +4819,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 457427938}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 457427937}
   manager: {fileID: 1412812148}
@@ -7594,6 +7595,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 650834179}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 650834178}
   manager: {fileID: 1412812148}
@@ -8825,6 +8827,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 739587484}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 739587483}
   manager: {fileID: 1412812148}
@@ -9485,6 +9488,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 789943090}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 789943089}
   manager: {fileID: 1412812148}
@@ -12288,6 +12292,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 864062517}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 864062516}
   manager: {fileID: 1412812148}
@@ -15243,6 +15248,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 1023898826}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 1023898825}
   manager: {fileID: 1412812148}
@@ -15426,13 +15432,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1026304995}
   - component: {fileID: 1026304994}
+  - component: {fileID: 1026304996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1026304994
 Light:
   m_ObjectHideFlags: 0
@@ -15513,6 +15520,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1026304996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026304993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!43 &1036865293
 Mesh:
   m_ObjectHideFlags: 0
@@ -18587,6 +18623,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 1298331900}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 1298331899}
   manager: {fileID: 1412812148}
@@ -23999,8 +24036,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282619334
-  m_fontColor: {r: 0.77647066, g: 0.58431375, b: 0.2627451, a: 1}
+    rgba: 4282162129
+  m_fontColor: {r: 0.81960785, g: 0.60784316, b: 0.23529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -24241,6 +24278,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 1769934734}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 1769934733}
   manager: {fileID: 1412812148}
@@ -24457,6 +24495,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 1785754979}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 1785754978}
   manager: {fileID: 1412812148}
@@ -26631,6 +26670,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 2074988114}
   offMaterial: {fileID: 2100000, guid: 0372ee6ad623abf4e850f3874008f0f2, type: 2}
   onMaterial: {fileID: 2100000, guid: a5791002fa2264b47ba8e13d61eb54fd, type: 2}
+  completeMaterial: {fileID: 0}
   isOn: 0
   interactable: {fileID: 2074988112}
   manager: {fileID: 1412812148}
