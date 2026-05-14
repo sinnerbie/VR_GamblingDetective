@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,8 +17,10 @@ public class Strongbox : MonoBehaviour
 
     [Header("Fuera")]
     [SerializeField] GameObject puerta;
+    public Animator ani;
 
     private string codigoActual = "";
+    private bool canOpen;
 
     private void Start()
     {
@@ -27,16 +30,22 @@ public class Strongbox : MonoBehaviour
 
     public void PulsarNumero(int numero)
     {
+        
         if (codigoActual.Length >= codigoCorrecto.Length)
             return;
 
         codigoActual += numero.ToString();
         ActualizarUI();
 
-        if (codigoActual.Length == codigoCorrecto.Length)
-            ComprobarCodigo();
+       // if (codigoActual.Length == codigoCorrecto.Length)
+            //canOpen = true;
+       // ComprobarCodigo();
     }
+    public void PulsarPomo()
+    {
 
+        ComprobarCodigo();
+    }
     public void LimpiarCodigo()
     {
         codigoActual = "";
@@ -50,13 +59,23 @@ public class Strongbox : MonoBehaviour
         {
             Debug.Log("Código correcto");
             alAcertar?.Invoke();
+            ani.SetTrigger("Open");
+            ani.SetBool("Fail", false);
         }
         else
         {
             Debug.Log("Código incorrecto");
             alFallar?.Invoke();
-           //LimpiarCodigo();
+            ani.SetBool("Fail", true);
+            StartCoroutine(WaitAnim());
+            //LimpiarCodigo();
         }
+    }
+    private IEnumerator WaitAnim()
+    {
+        yield return new WaitForSeconds(0.3f);
+        ani.SetBool("Fail", false);
+
     }
 
     public void Correcto()
@@ -71,5 +90,6 @@ public class Strongbox : MonoBehaviour
             return;
 
         valorPuesto.text = string.IsNullOrEmpty(codigoActual) ? "----" : codigoActual;
+        ani.SetBool("Fail", false);
     }
 }

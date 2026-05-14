@@ -13,8 +13,14 @@ public class StrongboxButton : MonoBehaviour
             return;
         }
 
-        Debug.Log("numero");
-
-        strongbox.PulsarNumero(numero);
+        Debug.Log(numero);
+        if (numero == 10)
+        {
+            strongbox.PulsarPomo();
+        }
+        else
+        {
+            strongbox.PulsarNumero(numero);
+        }
     }
 }
