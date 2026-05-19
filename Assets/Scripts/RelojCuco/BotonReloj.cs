@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ControlBotonRelojSimple : MonoBehaviour, IPointerClickHandler
+public class BotonReloj : MonoBehaviour//, IPointerClickHandler
 {
     [Header("Referencias")]
     public Transform pivoteAguja;
@@ -23,19 +23,17 @@ public class ControlBotonRelojSimple : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick()
     {
         if (pivoteAguja == null) return;
 
         // Invertido: sentidoHorario = true ahora rota en sentido horario
         float rot = gradosPorPulsacion * (sentidoHorario ? -1f : 1f);
         pivoteAguja.Rotate(0, 0, rot, Space.Self);
-
-        Debug.Log($"Nueva rotación: {pivoteAguja.localEulerAngles.z}");
     }
 
     void OnMouseDown()
     {
-        OnPointerClick(null);
+        //OnPointerClick(null);
     }
 }

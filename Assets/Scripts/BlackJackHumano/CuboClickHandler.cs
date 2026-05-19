@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class CuboClickHandler : MonoBehaviour
 {
-    private BlackJackHumano manager;
-    private CuboData miCuboData;
+    public BlackJackHumano manager;
+    public CuboData miCuboData;
 
     public void Inicializar(BlackJackHumano managerRef, CuboData cuboData)
     {
         manager = managerRef;
         miCuboData = cuboData;
+    }
+
+    public void BotonClick()
+    {
+        manager.SeleccionarCubo(miCuboData);
     }
 
     void OnMouseDown()

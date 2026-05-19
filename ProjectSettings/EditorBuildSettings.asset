@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SC_Casino.unity
     guid: 1a187617fff6b6f4985455683d964343
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PruebasSanti.unity
     guid: c435874741f63f142be718f29bed76f0
   m_configObjects:
