@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class SimbolosPuzzles : MonoBehaviour
 {
-
-    [Header("Símbolos")]
+    [Header("SÃ­mbolos")]
     public GameObject simbolosPuzzles;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         simbolosPuzzles.SetActive(false);
@@ -15,12 +13,22 @@ public class SimbolosPuzzles : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            if (other.gameObject.name == "ZonaOcultar")
+                return;
+
             simbolosPuzzles.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            if (other.gameObject.name == "ZonaOcultar")
+                return;
+
             simbolosPuzzles.SetActive(false);
+        }
     }
 }

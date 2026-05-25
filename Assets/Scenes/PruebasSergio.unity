@@ -1565,6 +1565,7 @@ Transform:
   - {fileID: 1560345225}
   - {fileID: 1260263689}
   - {fileID: 1416579062}
+  - {fileID: 1667060093}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191432340
@@ -2951,6 +2952,8 @@ MonoBehaviour:
           m_StringArgument: equivocado
           m_BoolArgument: 0
         m_CallState: 2
+  puerta: {fileID: 0}
+  ani: {fileID: 0}
 --- !u!1 &269642262
 GameObject:
   m_ObjectHideFlags: 0
@@ -23408,15 +23411,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667060092}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.09469, y: 0, z: -3.92538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 268731852}
   - {fileID: 885758642}
   - {fileID: 1412812147}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 183312142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1667748167
 Mesh:
@@ -27303,5 +27306,4 @@ SceneRoots:
   - {fileID: 742885813}
   - {fileID: 524397302}
   - {fileID: 485780260}
-  - {fileID: 1667060093}
   - {fileID: 183312142}
