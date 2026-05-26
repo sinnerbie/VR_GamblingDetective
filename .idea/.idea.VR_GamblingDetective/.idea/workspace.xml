@@ -6,236 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="583a2a37-d9d3-48d5-9a96-b72c3be38905" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_GamblingDetective/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_GamblingDetective/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arte/Materials/MT_AYUDA.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Materials/MT_AYUDA.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arte/png-transparent-jigsaw-puzzle-puzzle-piece-game-white-text-thumbnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arte/png-transparent-jigsaw-puzzle-puzzle-piece-game-white-text-thumbnail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Flashlight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Flashlight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/FlashlightColor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/FlashlightColor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Materials/FlashlightBaseMaterialColor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Materials/FlashlightBaseMaterialColor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Scenes/ExampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Scenes/ExampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_DFopac.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_DFopac.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_DFopac_Color.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_DFopac_Color.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_NM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_NM.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_SpecGlossA.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_SpecGlossA.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_SpecGlossAGold.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Flashlight_Gold/Textures/FlashLight_SpecGlossAGold.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightBaseMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightBaseMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightBulbMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightBulbMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightLensMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightLensMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightReflectorMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/FlashlightReflectorMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/GreyMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/GreyMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Materials/GreyMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/FlashLight_GL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/FlashLight_GL.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/FlashLight_NM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/FlashLight_NM.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_AL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_AL.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_OP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_OP.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_RFMorSP2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/LP_FlashLight_RFMorSP2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/ReflMap_PS_sHDR_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Misc/Flashlight.fbm/ReflMap_PS_sHDR_512.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Model/Flashlight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Model/Flashlight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Model/Spotlight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Model/Spotlight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_DFSA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_DFSA.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_NM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_NM.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_Opac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/FlashLight_Opac.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flashlight/Textures/Flashlight_Cookie3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PruebasSergio.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PruebasSergio.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/HandsDefaultMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/HandsDefaultMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/TransparentRed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/TransparentRed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Hands/1.7.1/HandVisualizer/Materials/White.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/Simbolos Puzzles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/Simbolos Puzzles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6SidedFluffball.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6SidedFluffball.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6SidedMegaSun.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6SidedMegaSun.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6sidedCosmicCoolCloud.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/6sidedCosmicCoolCloud.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/AmbienceExposure.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/AmbienceExposure.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CasualDay.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CasualDay.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CloudedSunGlow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CloudedSunGlow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/Cloudymorning.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/Cloudymorning.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CoriolisNight4k.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CoriolisNight4k.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CosmicCoolCloud_Eq.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/CosmicCoolCloud_Eq.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/DarkStorm.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/DarkStorm.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/DayInTheClouds.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/DayInTheClouds.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/AmbienceExposure.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/AmbienceExposure.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CasualDay.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CasualDay.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CloudyMorning.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CloudyMorning.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CosmicCoolCloud.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/CosmicCoolCloud.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/DarkStorm.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/DarkStorm.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/DayInTheClouds.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/DayInTheClouds.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/Daylightfreebiedemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/Daylightfreebiedemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/HighFantasy.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/HighFantasy.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/MidNightFreebieDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/MidNightFreebieDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/PlanetaryFreebie.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/PlanetaryFreebie.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/2_10.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/2_10.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/4_10.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/4_10.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/6_10.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/6_10.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/8_10.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/8_10.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/DemoObjects.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/Full.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SceneObjects/Full.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SkyhighFreebieDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SkyhighFreebieDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SundownFreebieDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SundownFreebieDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SunlessFreebieDemo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/SunlessFreebieDemo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/UnEarthlyRed.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/UnEarthlyRed.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/UnderTheSea.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/ExampleScenes/UnderTheSea.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FluffballDay.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FluffballDay.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/AmbienceExposure4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/AmbienceExposure4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CasualDay4K.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CasualDay4K.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CloudedSunGlow4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CloudedSunGlow4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/Cloudymorning4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/Cloudymorning4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CoriolisNight4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CoriolisNight4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudBack.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudBack.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudBottom.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudEQ_hdr.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudEQ_hdr.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudFront.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudFront.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudLeft.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudRight.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudRight.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudTop.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/CosmicCoolCloudTop.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/DarkStorm4K.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/DarkStorm4K.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/DayInTheClouds4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/DayInTheClouds4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDay4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDay4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayBack.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayBack.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayBottom.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayBottom.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayFront.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayFront.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayLeft.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayLeft.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayRight.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayRight.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayTop.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/FluffballDayTop.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/HighFantasy4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/HighFantasy4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSun4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSun4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunBack.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunBack.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunBottom.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunBottom.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunFront.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunFront.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunLeft.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunLeft.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunRight.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunRight.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunTop.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/MegaSunTop.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/PlanetaryEarth4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/PlanetaryEarth4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/SunlessCirruscover4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/SunlessCirruscover4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/UnderTheSea4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/UnderTheSea4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/UnearthlyRed4k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/FreebieHdri/UnearthlyRed4k.hdr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/Hdri setup.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/Hdri setup.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/HighFantasy.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/HighFantasy.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/MegaSun.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/MegaSun.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/PlanetaryEarth.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/PlanetaryEarth.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/SkyhighFluffycloudField.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/SkyhighFluffycloudField.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/SunlessCirruscover.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/SunlessCirruscover.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/UnderTheSea4k.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/UnderTheSea4k.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/UnearthlyRed.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkySeries Freebie/UnearthlyRed.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/Simbolos Puzzles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/Simbolos Puzzles.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/ActivarSimbolos.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -332,6 +114,7 @@
       <workItem from="1779719182233" duration="10000" />
       <workItem from="1779719397781" duration="601000" />
       <workItem from="1779722802929" duration="1311000" />
+      <workItem from="1779812819694" duration="1935000" />
     </task>
     <servers />
   </component>
