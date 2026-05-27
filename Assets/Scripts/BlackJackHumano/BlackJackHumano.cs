@@ -36,7 +36,6 @@ public class BlackJackHumano : MonoBehaviour
         }
 
         ActualizarUI();
-        ActualizarMensaje("¡Selecciona cubos hasta sumar 21!");
     }
 
 
@@ -73,14 +72,12 @@ public class BlackJackHumano : MonoBehaviour
         // Verificar si el juego ya terminó (victoria)
         if (juegoTerminado)
         {
-            ActualizarMensaje("¡Juego terminado!");
             return;
         }
 
         // Evitar seleccionar el mismo cubo dos veces
         if (cubosSeleccionados.Contains(cubo))
         {
-            ActualizarMensaje($"¡El cubo {cubo.valor} ya fue seleccionado!");
             return;
         }
 
@@ -92,13 +89,13 @@ public class BlackJackHumano : MonoBehaviour
             cubosSeleccionados.Add(cubo);
             sumaActual = nuevaSuma;
             ActualizarUI();
+            textoSumaActual.text = "21/21";
 
             // Cambiar color de TODOS los cubos seleccionados a dorado (victoria)
             foreach (var c in cubosSeleccionados)
                 CambiarColorCubo(c, colorVictoria);
 
             juegoTerminado = true; // Marcar juego como terminado
-            ActualizarMensaje($"¡FELICIDADES! ¡Sumaste exactamente {objetivo}!");
             DesactivarSelecciones(); // Bloquear más interacciones
         }
         // CASO 2: Suma MENOR a 21 - CONTINUAR JUGANDO
@@ -108,12 +105,10 @@ public class BlackJackHumano : MonoBehaviour
             sumaActual = nuevaSuma;
             ActualizarUI();
             CambiarColorCubo(cubo, colorSeleccionado); // Marcar cubo como seleccionado
-            ActualizarMensaje($"Suma actual: {sumaActual}. Te faltan {objetivo - sumaActual}");
         }
         // CASO 3: Suma MAYOR a 21 - REINICIAR SELECCIÓN
         else
         {
-            ActualizarMensaje($"¡Te pasaste! Sumabas {sumaActual} y sumaste {cubo.valor} = {nuevaSuma}. Reiniciando...");
             ReiniciarSeleccion(); // Reiniciar toda la selección actual
         }
     }
@@ -131,7 +126,6 @@ public class BlackJackHumano : MonoBehaviour
         cubosSeleccionados.Clear();
         sumaActual = 0;
         ActualizarUI();
-        ActualizarMensaje("Selección reiniciada. ¡Vuelve a intentarlo!");
     }
 
 
@@ -141,7 +135,6 @@ public class BlackJackHumano : MonoBehaviour
         ReiniciarSeleccion(); // Reiniciar selección actual
         juegoTerminado = false; // Reactivar el juego
         ActivarSelecciones(); // Volver a permitir clicks
-        ActualizarMensaje("¡Juego reiniciado! Selecciona cubos para sumar 21.");
     }
 
 
@@ -156,8 +149,12 @@ public class BlackJackHumano : MonoBehaviour
     // Actualiza el texto que muestra la suma actual en la UI
     void ActualizarUI()
     {
-        if (textoSumaActual != null)
-            textoSumaActual.text = $"Suma: {sumaActual} / {objetivo}";
+        if (textoSumaActual == null) return;
+
+        if (juegoTerminado)
+            textoSumaActual.text = ""; // desaparece ???/21
+        else
+            textoSumaActual.text = $"??? / {objetivo}";
     }
 
 

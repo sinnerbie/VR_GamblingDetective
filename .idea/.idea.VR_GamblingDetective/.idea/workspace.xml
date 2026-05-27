@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="583a2a37-d9d3-48d5-9a96-b72c3be38905" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_GamblingDetective/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_GamblingDetective/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Linterna.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Linterna.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.3.0/Starter Assets/Materials/Controller_Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.3.0/Starter Assets/Materials/Controller_Grey.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.3.0/Starter Assets/Materials/Controller_White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.3.0/Starter Assets/Materials/Controller_White.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PruebasMarc.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PruebasMarc.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BlackJackHumano/BlackJackHumano.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BlackJackHumano/BlackJackHumano.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +112,7 @@
       <workItem from="1779722802929" duration="1311000" />
       <workItem from="1779812819694" duration="1935000" />
       <workItem from="1779892132937" duration="14000" />
+      <workItem from="1779906957595" duration="2031000" />
     </task>
     <servers />
   </component>
