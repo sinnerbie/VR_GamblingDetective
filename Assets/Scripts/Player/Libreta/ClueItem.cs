@@ -12,7 +12,10 @@ public class ClueItem : MonoBehaviour
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
         if (photo.sprite != null)
+        {
+            photo.color = new Color32(255, 255, 255, 255);
             photo.sprite = newIm;
+        }
         else
             photo.color = new Color32(0, 0, 0, 0);
 
