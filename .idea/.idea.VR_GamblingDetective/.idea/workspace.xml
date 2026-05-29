@@ -9,8 +9,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/1942_report/1942 SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/punk_typewriter/Punk Typewriter SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/Fonts/why_do_we_blink_so_frequently/Why do we blink so frequently. SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Models/Cajon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/Models/Cajon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arte/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arte/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PruebasMarc.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PruebasMarc.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SC_Casino.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BlackJackHumano/BlackJackHumano.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BlackJackHumano/BlackJackHumano.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/ActivarSimbolos.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/ActivarSimbolos.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ayudas Generales/ActivarSimbolos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@5f736ad4ccd8/Runtime/Interaction/Gaze/XRGazeAssistance.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -113,6 +119,11 @@
       <workItem from="1779812819694" duration="1935000" />
       <workItem from="1779892132937" duration="14000" />
       <workItem from="1779906957595" duration="2031000" />
+      <workItem from="1779987995266" duration="42000" />
+      <workItem from="1780048484437" duration="2000" />
+      <workItem from="1780048499378" duration="7000" />
+      <workItem from="1780048593818" duration="3000" />
+      <workItem from="1780048609247" duration="651000" />
     </task>
     <servers />
   </component>

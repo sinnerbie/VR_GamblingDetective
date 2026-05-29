@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ActivarSimbolos : MonoBehaviour
@@ -7,7 +8,7 @@ public class ActivarSimbolos : MonoBehaviour
 
     [Header("Colliders")]
     public Collider zonaActivar;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
